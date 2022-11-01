@@ -4,25 +4,9 @@ on:
   push:
     branches:
       - main
-    inputs:
-      executor_dir:
-        required: false
-        type: string
-        default: "."
-  workflow_dispatch:
-    inputs:
-      executor_dir:
-        required: false
-        type: string
-        default: "."
-
 
 jobs:
-  dummy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: debug
-        run: |
-          echo executor_dir ${{ inputs.executor_dir }}
-          echo executor_dir default ${{ inputs.executor_dir.default }}
-          echo executor_dir required ${{ inputs.executor_dir.required }}
+  call-test-workflow:
+    uses: jina-ai/executor-push-test/.github/test-workflow.yml@main
+    with:
+      executor_dir: "test_dir"
