@@ -8,7 +8,7 @@ on:
       executor_dir:
         required: false
         type: string
-        default: '.'
+        default: 'foo_dir'
 
 
 jobs:
