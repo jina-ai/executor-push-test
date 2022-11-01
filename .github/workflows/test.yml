@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-test-workflow:
-    uses: jina-ai/executor-push-test/.github/test-workflow.yml@main
+    uses: jina-ai/executor-push-test/.github/workflows/test-workflow.yml@main
     with:
       executor_dir: "test_dir"
