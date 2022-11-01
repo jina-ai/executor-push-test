@@ -8,7 +8,13 @@ on:
       executor_dir:
         required: false
         type: string
-        default: 'foo_dir'
+        default: "."
+  workflow_dispatch:
+    inputs:
+      executor_dir:
+        required: false
+        type: string
+        default: "."
 
 
 jobs:
