@@ -1,0 +1,8 @@
+jtype: MyExecutor98
+py_modules:
+  - executor.py
+metas:
+  name: MyExecutor98
+  description: 
+  url: 
+  keywords: []
