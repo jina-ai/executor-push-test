@@ -1,0 +1,20 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+    inputs:
+      executor_dir:
+        required: false
+        type: string
+        default: "."
+
+
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: debug
+        run: |
+          echo "executor_dir: ${{ inputs.executor_dir }}"
