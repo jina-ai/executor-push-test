@@ -17,4 +17,4 @@ jobs:
     steps:
       - name: debug
         run: |
-          echo "executor_dir: ${{ github.event.inputs.executor_dir }}"
+          echo "executor_dir: ${ INPUT_executor_dir }"
