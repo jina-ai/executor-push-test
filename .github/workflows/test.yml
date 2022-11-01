@@ -17,5 +17,4 @@ jobs:
     steps:
       - name: debug
         run: |
-          echo "executor_dir: ${ INPUT_executor_dir }"
           echo executor_dir ${{ inputs.executor_dir }}
